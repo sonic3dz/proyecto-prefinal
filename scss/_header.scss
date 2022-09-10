@@ -1,0 +1,48 @@
+header{
+    background-image:linear-gradient(to right, #0575E6, #021B79);
+    color: #E8EBEE;
+    .tituloIcono{
+        display:flex;
+    }  
+    .tituloIcono h1 {
+        font-size: 50px;  
+        margin-top: 15px;  
+   }
+    .tituloIcono img{
+       max-width: 110px;  
+    }
+    .barraNavegacion{
+        display: flex;
+        font-size: 25px;
+        justify-content: center;
+    }
+    .barraNavegacion li {
+        margin: auto 35px;
+    }
+    .iniciarRegister{
+        font-size: 20px;
+        margin-right: auto;
+        margin-left: auto;
+   }
+    .iniciarRegister ul{
+        display: flex;
+        list-style-type: none;
+    }
+    .iniciarRegister ul li {
+        margin: 15px;   
+    }
+    .iniciarRegister ul li a{
+        text-decoration: none;
+        color: #E8EBEE;
+    }
+    .materiasOpciones ul{
+        background-color: #0575E6; 
+    }
+    .materiasOpciones li{
+        font-size: 25px;
+        margin: 10px;
+    }
+    .materiasOpciones ul li a{
+        text-decoration: none;   
+    }
+}

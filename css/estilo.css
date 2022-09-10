@@ -1,1 +1,44 @@
+@import url("https://fonts.googleapis.com/css2? family= Mukta:wght@200 & family= Roboto:wght@300 & display=swap");
+* {
+  padding: 0;
+  margin: 0; }
 
+body {
+  background-color: #F6FAFB;
+  color: #262728; }
+
+header {
+  background-image: linear-gradient(to right, #0575E6, #021B79);
+  color: #E8EBEE; }
+  header .tituloIcono {
+    display: flex; }
+  header .tituloIcono h1 {
+    font-size: 50px;
+    margin-top: 15px; }
+  header .tituloIcono img {
+    max-width: 110px; }
+  header .barraNavegacion {
+    display: flex;
+    font-size: 25px;
+    justify-content: center; }
+  header .barraNavegacion li {
+    margin: auto 35px; }
+  header .iniciarRegister {
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto; }
+  header .iniciarRegister ul {
+    display: flex;
+    list-style-type: none; }
+  header .iniciarRegister ul li {
+    margin: 15px; }
+  header .iniciarRegister ul li a {
+    text-decoration: none;
+    color: #E8EBEE; }
+  header .materiasOpciones ul {
+    background-color: #0575E6; }
+  header .materiasOpciones li {
+    font-size: 25px;
+    margin: 10px; }
+  header .materiasOpciones ul li a {
+    text-decoration: none; }
