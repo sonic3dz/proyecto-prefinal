@@ -42,3 +42,48 @@ header {
     margin: 10px; }
   header .materiasOpciones ul li a {
     text-decoration: none; }
+
+/*MAIN*/
+main {
+  color: #E8EBEE;
+  background-image: linear-gradient(to right, #A7BFE8, #6190E8); }
+  main .historiaEscuela {
+    text-align: center;
+    max-width: 650px;
+    text-transform: capitalize; }
+  main .historiaEscuela h2 {
+    font-size: 40px; }
+  main .historiaEscuela img {
+    max-width: 650px;
+    width: 100%; }
+  main .noticiasAvisos {
+    text-transform: capitalize; }
+  main .noticiasAvisos h2 {
+    font-size: 40px; }
+  main .noticiasAvisos p {
+    max-width: 300px; }
+  main .escuelaUbicacion {
+    text-align: center;
+    max-width: 650px; }
+  main .escuelaUbicacion h2 {
+    font-size: 40px; }
+  main .escuelaUbicacion iframe {
+    max-width: 650px;
+    width: 100%; }
+  main .galeria {
+    text-align: center;
+    max-width: 650px; }
+  main .galeria h2 {
+    font-size: 40px; }
+  main .galeria img {
+    max-width: 650px;
+    width: 100%; }
+
+footer {
+  background-image: linear-gradient(to right, #0575E6, #021B79);
+  color: #E8EBEE; }
+  footer .escuelaInformacion {
+    font-size: 20px; }
+  footer .escuelaCreditos {
+    font-size: 20px;
+    max-width: 700px; }

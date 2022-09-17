@@ -1,0 +1,49 @@
+/*MAIN*/
+main{
+    color:#E8EBEE;
+    background-image:linear-gradient(to right, #A7BFE8,#6190E8);
+    .historiaEscuela{
+        text-align: center;
+        max-width: 650px;
+        text-transform:capitalize
+    }
+    .historiaEscuela h2{
+        font-size: 40px;
+    }         
+    .historiaEscuela img{
+        max-width: 650px;
+        width: 100%;
+    }
+    .noticiasAvisos{
+        text-transform: capitalize;
+    }
+    .noticiasAvisos h2{
+        font-size: 40px;
+    }   
+    .noticiasAvisos p{
+        max-width: 300px;
+    }
+    .escuelaUbicacion{
+        text-align: center;
+        max-width: 650px;
+    }
+    .escuelaUbicacion h2{
+        font-size: 40px;
+    }
+    .escuelaUbicacion iframe{
+        max-width: 650px;
+        width: 100%;
+    }
+    .galeria{
+        text-align: center;
+        max-width: 650px;
+    }
+    .galeria h2{
+        font-size: 40px;
+    }
+    .galeria img{
+        max-width: 650px;
+        width: 100%;
+    }
+
+}
