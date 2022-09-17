@@ -2,10 +2,12 @@
 main{
     color:#E8EBEE;
     background-image:linear-gradient(to right, #A7BFE8,#6190E8);
+    display: grid;
     .historiaEscuela{
         text-align: center;
         max-width: 650px;
-        text-transform:capitalize
+        text-transform:capitalize;
+        grid-area: historiaescuela;
     }
     .historiaEscuela h2{
         font-size: 40px;
@@ -16,34 +18,47 @@ main{
     }
     .noticiasAvisos{
         text-transform: capitalize;
+        grid-area: noticiasavisos;
     }
     .noticiasAvisos h2{
         font-size: 40px;
+        text-align: center;
     }   
     .noticiasAvisos p{
-        max-width: 300px;
+        text-align: center;
+        max-width: 400px;
     }
+    
     .escuelaUbicacion{
         text-align: center;
-        max-width: 650px;
+        max-width: 800px;
+        grid-area: escuelaubicacion;
     }
     .escuelaUbicacion h2{
         font-size: 40px;
     }
     .escuelaUbicacion iframe{
-        max-width: 650px;
+        max-width: 800px;
         width: 100%;
     }
     .galeria{
         text-align: center;
-        max-width: 650px;
+        max-width: 800px;
+        grid-area: galeria;
+        margin-left: auto;
+        margin-right: auto;
     }
     .galeria h2{
         font-size: 40px;
     }
     .galeria img{
-        max-width: 650px;
+        max-width: 800px;
         width: 100%;
     }
+    grid-template-areas:
+    "historiaescuela  historiaescuela noticiasavisos" 
+    "escuelaubicacion escuelaubicacion escuelaubicacion"
+    "galeria galeria galeria";
+    
 
 }

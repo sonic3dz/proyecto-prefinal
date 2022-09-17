@@ -9,9 +9,12 @@ body {
 
 header {
   background-image: linear-gradient(to right, #0575E6, #021B79);
-  color: #E8EBEE; }
+  color: #E8EBEE;
+  position: sticky;
+  top: 0%; }
   header .tituloIcono {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
   header .tituloIcono h1 {
     font-size: 50px;
     margin-top: 15px; }
@@ -21,6 +24,9 @@ header {
     display: flex;
     font-size: 25px;
     justify-content: center; }
+  header .barraNavegacion ul {
+    flex-wrap: wrap;
+    margin: -15px; }
   header .barraNavegacion li {
     margin: auto 35px; }
   header .iniciarRegister {
@@ -29,8 +35,10 @@ header {
     margin-left: auto; }
   header .iniciarRegister ul {
     display: flex;
-    list-style-type: none; }
+    list-style-type: none;
+    flex-wrap: wrap; }
   header .iniciarRegister ul li {
+    display: flex;
     margin: 15px; }
   header .iniciarRegister ul li a {
     text-decoration: none;
@@ -46,37 +54,47 @@ header {
 /*MAIN*/
 main {
   color: #E8EBEE;
-  background-image: linear-gradient(to right, #A7BFE8, #6190E8); }
+  background-image: linear-gradient(to right, #A7BFE8, #6190E8);
+  display: grid;
+  grid-template-areas: "historiaescuela  historiaescuela noticiasavisos"  "escuelaubicacion escuelaubicacion escuelaubicacion" "galeria galeria galeria"; }
   main .historiaEscuela {
     text-align: center;
     max-width: 650px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    grid-area: historiaescuela; }
   main .historiaEscuela h2 {
     font-size: 40px; }
   main .historiaEscuela img {
     max-width: 650px;
     width: 100%; }
   main .noticiasAvisos {
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    grid-area: noticiasavisos; }
   main .noticiasAvisos h2 {
-    font-size: 40px; }
+    font-size: 40px;
+    text-align: center; }
   main .noticiasAvisos p {
-    max-width: 300px; }
+    text-align: center;
+    max-width: 400px; }
   main .escuelaUbicacion {
     text-align: center;
-    max-width: 650px; }
+    max-width: 800px;
+    grid-area: escuelaubicacion; }
   main .escuelaUbicacion h2 {
     font-size: 40px; }
   main .escuelaUbicacion iframe {
-    max-width: 650px;
+    max-width: 800px;
     width: 100%; }
   main .galeria {
     text-align: center;
-    max-width: 650px; }
+    max-width: 800px;
+    grid-area: galeria;
+    margin-left: auto;
+    margin-right: auto; }
   main .galeria h2 {
     font-size: 40px; }
   main .galeria img {
-    max-width: 650px;
+    max-width: 800px;
     width: 100%; }
 
 footer {
