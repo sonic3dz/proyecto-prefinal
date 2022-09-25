@@ -1,0 +1,64 @@
+.informacionInscripcion{
+    margin: 30px;
+    display: grid;
+    grid-template-areas: 
+    "subtitulo subtitulo subtitulo"
+    "requisitos proceso fecha"
+    "inscripcion inscripcion inscripcion";
+}
+
+.informacionInscripcion h3{
+    font-size: 30px;
+}
+
+.mainInscripcion h2{
+    font-size: 80px;
+    text-align: center;
+    grid-area: subtitulo;
+    text-transform: uppercase;
+    text-decoration:underline;
+    margin:20px
+}
+
+.requisitosInscripcion{
+    grid-area: requisitos;
+
+}
+
+.procesoInscripcion{
+    grid-area: proceso;
+    text-align: center;
+
+}
+
+.fechaInscripcion{
+    grid-area: fecha;
+    text-align: center;
+}
+
+.inscripcion{
+    grid-area: inscripcion;
+    border: 1px black solid;
+}
+
+.inscripcion legend{
+    text-align: center;
+}
+
+.inscripcion form input{    
+    display: flex;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.inscripcion form label{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    font-size: 20px;
+    
+}
+    
+    

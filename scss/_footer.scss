@@ -1,11 +1,16 @@
 footer{
     background-image:linear-gradient(to right, #0575E6, #021B79);
     color: #E8EBEE;
+    display: grid;
+    grid-template-areas: "informacion creditos";
     .escuelaInformacion  {
         font-size: 20px;
+        grid-area: informacion;
     }
     .escuelaCreditos {
-        font-size: 20px;
+        margin-left: auto;
+        font-size: 17px;
         max-width: 700px;
+        grid-area: creditos;
     }
 }

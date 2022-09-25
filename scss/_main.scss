@@ -31,25 +31,26 @@ main{
     
     .escuelaUbicacion{
         text-align: center;
-        max-width: 800px;
         grid-area: escuelaubicacion;
     }
     .escuelaUbicacion h2{
         font-size: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .escuelaUbicacion iframe{
         max-width: 800px;
         width: 100%;
     }
     .galeria{
-        text-align: center;
-        max-width: 800px;
         grid-area: galeria;
         margin-left: auto;
         margin-right: auto;
     }
     .galeria h2{
         font-size: 40px;
+        text-align: center;
     }
     .galeria img{
         max-width: 800px;

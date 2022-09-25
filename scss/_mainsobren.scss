@@ -1,0 +1,31 @@
+ .sobreNosotros{
+    display: grid;
+    margin-left: auto;
+    grid-template-areas:
+    "subtitulo subtitulo subtitulo"
+    "filauno filados filatres";
+    
+    
+ }
+ .sobreNosotros h2 {
+    font-size: 60px;
+    text-align: center;
+    grid-area: subtitulo;
+    
+}
+.fila{
+    max-width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+
+.Uno{
+    grid-area: filauno;
+    
+}
+.Dos{
+    grid-area: filados;
+}
+.Tres{
+    grid-area: filatres;
+}

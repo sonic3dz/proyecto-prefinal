@@ -1,8 +1,11 @@
 header{
     background-image:linear-gradient(to right, #0575E6, #021B79);
     color: #E8EBEE;
-    position: sticky;
     top: 0%;
+    
+    z-index: 1000;
+    
+    
     .tituloIcono{
         display:flex;
         flex-wrap: wrap;
