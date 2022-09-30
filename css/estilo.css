@@ -15,41 +15,41 @@ header {
   header .tituloIcono {
     display: flex;
     flex-wrap: wrap; }
-  header .tituloIcono h1 {
-    font-size: 50px;
-    margin-top: 15px; }
-  header .tituloIcono img {
-    max-width: 110px; }
+    header .tituloIcono h1 {
+      font-size: 50px;
+      margin-top: 15px; }
+    header .tituloIcono img {
+      max-width: 110px; }
   header .barraNavegacion {
     display: flex;
     font-size: 25px;
     justify-content: center; }
-  header .barraNavegacion ul {
-    flex-wrap: wrap;
-    margin: -15px; }
-  header .barraNavegacion li {
-    margin: auto 35px; }
+    header .barraNavegacion ul {
+      flex-wrap: wrap;
+      margin: -15px; }
+      header .barraNavegacion ul li {
+        margin: auto 35px; }
   header .iniciarRegister {
-    font-size: 20px;
+    font-size: 23px;
     margin-right: auto;
     margin-left: auto; }
-  header .iniciarRegister ul {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap; }
-  header .iniciarRegister ul li {
-    display: flex;
-    margin: 15px; }
-  header .iniciarRegister ul li a {
-    text-decoration: none;
-    color: #E8EBEE; }
+    header .iniciarRegister ul {
+      display: flex;
+      list-style-type: none;
+      flex-wrap: wrap; }
+      header .iniciarRegister ul li {
+        display: flex;
+        margin: 15px; }
+        header .iniciarRegister ul li a {
+          text-decoration: none;
+          color: #E8EBEE; }
   header .materiasOpciones ul {
     background-color: #0575E6; }
-  header .materiasOpciones li {
-    font-size: 25px;
-    margin: 10px; }
-  header .materiasOpciones ul li a {
-    text-decoration: none; }
+    header .materiasOpciones ul li {
+      font-size: 25px;
+      margin: 10px; }
+      header .materiasOpciones ul li a {
+        text-decoration: none; }
 
 /*MAIN*/
 main {
@@ -62,41 +62,41 @@ main {
     max-width: 650px;
     text-transform: capitalize;
     grid-area: historiaescuela; }
-  main .historiaEscuela h2 {
-    font-size: 40px; }
-  main .historiaEscuela img {
-    max-width: 650px;
-    width: 100%; }
+    main .historiaEscuela h2 {
+      font-size: 40px; }
+    main .historiaEscuela img {
+      max-width: 650px;
+      width: 100%; }
   main .noticiasAvisos {
     text-transform: capitalize;
     grid-area: noticiasavisos; }
-  main .noticiasAvisos h2 {
-    font-size: 40px;
-    text-align: center; }
-  main .noticiasAvisos p {
-    text-align: center;
-    max-width: 400px; }
+    main .noticiasAvisos h2 {
+      font-size: 40px;
+      text-align: center; }
+    main .noticiasAvisos p {
+      text-align: center;
+      max-width: 400px; }
   main .escuelaUbicacion {
     text-align: center;
     grid-area: escuelaubicacion; }
-  main .escuelaUbicacion h2 {
-    font-size: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto; }
-  main .escuelaUbicacion iframe {
-    max-width: 800px;
-    width: 100%; }
+    main .escuelaUbicacion h2 {
+      font-size: 40px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto; }
+    main .escuelaUbicacion iframe {
+      max-width: 800px;
+      width: 100%; }
   main .galeria {
     grid-area: galeria;
     margin-left: auto;
     margin-right: auto; }
-  main .galeria h2 {
-    font-size: 40px;
-    text-align: center; }
-  main .galeria img {
-    max-width: 800px;
-    width: 100%; }
+    main .galeria h2 {
+      font-size: 40px;
+      text-align: center; }
+    main .galeria img {
+      max-width: 800px;
+      width: 100%; }
 
 footer {
   background-image: linear-gradient(to right, #0575E6, #021B79);
@@ -116,11 +116,10 @@ footer {
   display: grid;
   margin-left: auto;
   grid-template-areas: "subtitulo subtitulo subtitulo" "filauno filados filatres"; }
-
-.sobreNosotros h2 {
-  font-size: 60px;
-  text-align: center;
-  grid-area: subtitulo; }
+  .sobreNosotros h2 {
+    font-size: 60px;
+    text-align: center;
+    grid-area: subtitulo; }
 
 .fila {
   max-width: 300px;
@@ -136,14 +135,6 @@ footer {
 .Tres {
   grid-area: filatres; }
 
-.informacionInscripcion {
-  margin: 30px;
-  display: grid;
-  grid-template-areas: "subtitulo subtitulo subtitulo" "requisitos proceso fecha" "inscripcion inscripcion inscripcion"; }
-
-.informacionInscripcion h3 {
-  font-size: 30px; }
-
 .mainInscripcion h2 {
   font-size: 80px;
   text-align: center;
@@ -151,6 +142,13 @@ footer {
   text-transform: uppercase;
   text-decoration: underline;
   margin: 20px; }
+
+.informacionInscripcion {
+  margin: 30px;
+  display: grid;
+  grid-template-areas: "subtitulo subtitulo subtitulo" "requisitos proceso fecha" "inscripcion inscripcion inscripcion"; }
+  .informacionInscripcion h3 {
+    font-size: 30px; }
 
 .requisitosInscripcion {
   grid-area: requisitos; }
@@ -166,18 +164,36 @@ footer {
 .inscripcion {
   grid-area: inscripcion;
   border: 1px black solid; }
+  .inscripcion form legend {
+    text-align: center; }
+  .inscripcion form input {
+    display: flex;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto; }
+  .inscripcion form label {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    font-size: 20px; }
 
-.inscripcion legend {
-  text-align: center; }
+.maininiciarSesion h2 {
+  font-size: 50px; }
 
-.inscripcion form input {
+.maininiciarSesion .iniciarSesion {
   display: flex;
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.inscripcion form label {
-  display: flex;
-  margin: 5px;
-  justify-content: center;
-  font-size: 20px; }
+  justify-content: center; }
+  .maininiciarSesion .iniciarSesion form legend {
+    text-align: center; }
+    .maininiciarSesion .iniciarSesion form legend p {
+      font-size: 50px; }
+  .maininiciarSesion .iniciarSesion form input {
+    display: flex;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto; }
+  .maininiciarSesion .iniciarSesion form label {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    font-size: 20px; }

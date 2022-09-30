@@ -8,54 +8,60 @@ main{
         max-width: 650px;
         text-transform:capitalize;
         grid-area: historiaescuela;
+        h2{
+            font-size: 40px;
+        }    
+        img{
+            max-width: 650px;
+            width: 100%;
+        }
     }
-    .historiaEscuela h2{
-        font-size: 40px;
-    }         
-    .historiaEscuela img{
-        max-width: 650px;
-        width: 100%;
-    }
+          
+    
     .noticiasAvisos{
         text-transform: capitalize;
         grid-area: noticiasavisos;
+        h2{
+            font-size: 40px;
+            text-align: center;
+        }   
+        p{
+            text-align: center;
+            max-width: 400px;
+        }
     }
-    .noticiasAvisos h2{
-        font-size: 40px;
-        text-align: center;
-    }   
-    .noticiasAvisos p{
-        text-align: center;
-        max-width: 400px;
-    }
+     
+     
     
     .escuelaUbicacion{
         text-align: center;
         grid-area: escuelaubicacion;
+        h2{
+            font-size: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        iframe{
+            max-width: 800px;
+            width: 100%;
+        }
     }
-    .escuelaUbicacion h2{
-        font-size: 40px;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .escuelaUbicacion iframe{
-        max-width: 800px;
-        width: 100%;
-    }
+     
     .galeria{
         grid-area: galeria;
         margin-left: auto;
         margin-right: auto;
+        h2{
+            font-size: 40px;
+            text-align: center;
+        }
+        img{
+            max-width: 800px;
+            width: 100%;
+        }
     }
-    .galeria h2{
-        font-size: 40px;
-        text-align: center;
-    }
-    .galeria img{
-        max-width: 800px;
-        width: 100%;
-    }
+     
     grid-template-areas:
     "historiaescuela  historiaescuela noticiasavisos" 
     "escuelaubicacion escuelaubicacion escuelaubicacion"
