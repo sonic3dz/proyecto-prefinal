@@ -177,23 +177,29 @@ footer {
     justify-content: center;
     font-size: 20px; }
 
-.maininiciarSesion h2 {
-  font-size: 50px; }
+.maininiciarSesion .iniciarSesion form legend {
+  text-align: center; }
+  .maininiciarSesion .iniciarSesion form legend p {
+    font-size: 50px; }
 
-.maininiciarSesion .iniciarSesion {
+.maininiciarSesion .iniciarSesion form input {
   display: flex;
-  justify-content: center; }
-  .maininiciarSesion .iniciarSesion form legend {
-    text-align: center; }
-    .maininiciarSesion .iniciarSesion form legend p {
-      font-size: 50px; }
-  .maininiciarSesion .iniciarSesion form input {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.maininiciarSesion .iniciarSesion form label {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  font-size: 20px; }
+
+.mainInformacion {
+  margin-left: auto;
+  margin-right: auto; }
+  .mainInformacion .informacion h2 {
     display: flex;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto; }
-  .maininiciarSesion .iniciarSesion form label {
-    display: flex;
-    margin: 5px;
-    justify-content: center;
-    font-size: 20px; }
+    font-size: 60px; }
+  .mainInformacion .informacion p {
+    text-align: center;
+    max-width: 300px; }

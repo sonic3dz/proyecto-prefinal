@@ -1,11 +1,5 @@
 .maininiciarSesion{
-    h2{
-        font-size: 50px;
-        
-    }
     .iniciarSesion{
-        display: flex;
-        justify-content: center;
         form{
             legend{
                 text-align: center;
@@ -18,12 +12,11 @@
                 margin: 10px;
                 margin-left: auto;
                 margin-right: auto;
-                
             }     
             label{
                 display: flex;
-                margin: 5px;
                 justify-content: center;
+                margin: 5px;
                 font-size: 20px;
                 
             }

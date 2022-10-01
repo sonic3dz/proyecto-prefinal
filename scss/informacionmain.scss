@@ -1,0 +1,14 @@
+.mainInformacion{
+    margin-left: auto;
+        margin-right: auto;
+    .informacion{
+        h2{
+            display: flex;
+            font-size: 60px;
+        }
+        p{
+            text-align: center;
+            max-width: 300px;
+        }
+    }
+}
