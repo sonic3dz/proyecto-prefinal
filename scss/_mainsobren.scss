@@ -1,29 +1,47 @@
- .sobreNosotros{
-    display: grid;
-    margin-left: auto;
-    grid-template-areas:
-    "subtitulo subtitulo subtitulo"
-    "filauno filados filatres";
-    h2 {
-        font-size: 60px;
-        text-align: center;
-        grid-area: subtitulo;
-    }
+ .mainMain{
+    display: block;
+    .sobreNosotros{
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-areas:
+        "subtitulo subtitulo subtitulo"
+        "filauno filados filatres";
+        h2 {
+            font-size: 60px;
+            text-align: center;
+            text-decoration:underline;
+            grid-area: subtitulo;
+        }
+        .fila{
+            max-width: 300px;
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .Uno{
+            grid-area: filauno;
+            
+        }
+        .Dos{
+            grid-area: filados;
+        }
+        .Tres{
+            grid-area: filatres;
+        }
+        @media (max-width: 576px){
+            
+            grid-template-areas: 
+            "subtitulo"
+            "filauno"
+            "filados"
+            "filatres";
+            
+         }
+     }
+     
+     
+
  }
  
-.fila{
-    max-width: 300px;
-    text-align: center;
-    margin: 20px;
-}
 
-.Uno{
-    grid-area: filauno;
-    
-}
-.Dos{
-    grid-area: filados;
-}
-.Tres{
-    grid-area: filatres;
-}

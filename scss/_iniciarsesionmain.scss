@@ -1,6 +1,8 @@
 .maininiciarSesion{
+    display: block;
     .iniciarSesion{
         form{
+            
             legend{
                 text-align: center;
                 p{
@@ -9,14 +11,13 @@
             }
             input{    
                 display: flex;
-                margin: 10px;
+                margin: 20px;
                 margin-left: auto;
                 margin-right: auto;
             }     
             label{
                 display: flex;
                 justify-content: center;
-                margin: 5px;
                 font-size: 20px;
                 
             }

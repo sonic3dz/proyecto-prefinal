@@ -1,5 +1,5 @@
 /*MAIN*/
-main{
+.mainPrincipal{
     color:#E8EBEE;
     background-image:linear-gradient(to right, #A7BFE8,#6190E8);
     display: grid;
@@ -66,6 +66,14 @@ main{
     "historiaescuela  historiaescuela noticiasavisos" 
     "escuelaubicacion escuelaubicacion escuelaubicacion"
     "galeria galeria galeria";
+
+    @media (max-width: 576px){
+        grid-template-areas: 
+        "historiaescuela"
+        "noticiasavisos"
+        "escuelaubicacion"
+        "galeria";
+    }  
     
 
 }

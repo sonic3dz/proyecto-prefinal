@@ -1,0 +1,26 @@
+.mainContacto{
+    display: block;
+    display: flex;
+    justify-content: center;
+    .informacionContacto{
+        h2{
+            font-size: 60px;
+            text-decoration: underline;
+            text-align: center;
+        }
+        p{
+            max-width: 500px;
+            text-align: center;
+        }
+        .contacto{
+            margin-left: auto;
+            margin-right: auto;
+            a{
+                img{
+                    max-width: 100px;
+                }
+            }
+        }
+    }
+   
+}

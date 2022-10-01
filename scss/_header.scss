@@ -2,8 +2,12 @@ header{
     background-image:linear-gradient(to right, #0575E6, #021B79);
     color: #E8EBEE;
     top: 0%;
-    
     z-index: 1000;
+    @media (max-width: 576px){
+        h1{
+            display: none;
+        }
+   }
     
     .tituloIcono{
         display:flex;
@@ -15,7 +19,8 @@ header{
         img{
             max-width: 110px;  
          }
-   }
+         
+    }
 
     .barraNavegacion{
         display: flex;
@@ -60,7 +65,10 @@ header{
                 text-decoration: none;   
             }
         } 
-    } 
-   }
+      } 
+      
     
-}
+    }
+    
+ 
+} 
