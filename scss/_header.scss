@@ -26,9 +26,12 @@ header{
         display: flex;
         font-size: 25px;
         justify-content: center;
+        
          ul{
             flex-wrap: wrap;
             margin: -15px; 
+            transition: all 0.8s;
+            
             li {
                 margin: auto 35px;
             }
