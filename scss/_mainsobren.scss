@@ -4,12 +4,11 @@
     background-image:linear-gradient(to right, #A7BFE8,#6190E8);
     .sobreNosotros{
         display: grid;
-        margin-left: auto;
-        margin-right: auto;
         grid-template-areas:
         "subtitulo subtitulo subtitulo"
         "filauno filados filatres";
         h2 {
+            margin:0 auto 20px;
             font-size: 60px;
             text-align: center;
             text-decoration:underline;
@@ -18,19 +17,21 @@
         .fila{
             max-width: 300px;
             text-align: center;
-            margin: 20px;
-            text-decoration: underline;
+            margin:0 auto 20px;
+            
         }
         
         .Uno{
             grid-area: filauno;
-            
+           
         }
         .Dos{
             grid-area: filados;
+            
         }
         .Tres{
             grid-area: filatres;
+            
         }
         @media (max-width: 576px){
             grid-template-areas: 
