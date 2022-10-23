@@ -1,77 +1,108 @@
-header{
-    background-image:linear-gradient(to right, #0575E6, #021B79);
+header {
+    background-image: linear-gradient(to right, #0575E6, #021B79);
     color: #E8EBEE;
     top: 0%;
     z-index: 1000;
-    @media (max-width: 576px){
-        h1{
+
+    @media (max-width: 576px) {
+        h1 {
             display: none;
         }
-   }
-    
-    .tituloIcono{
-        display:flex;
-        flex-wrap: wrap;
-        h1 {
-          font-size: 50px;  
-          margin-top: 15px;    
-        }  
-        img{
-            max-width: 110px;  
-         }
-         
     }
 
-    .barraNavegacion{
+    .tituloIcono {
+        display: flex;
+        flex-wrap: wrap;
+
+        h1 {
+            font-size: 50px;
+            margin-top: 15px;
+        }
+
+        img {
+            max-width: 110px;
+        }
+
+    }
+
+    .barraNavegacion {
+        nav {
+            div {
+
+
+                .navbar {
+                    left: auto;
+                }
+
+
+            }
+        }
+
         display: flex;
         font-size: 25px;
         justify-content: center;
-        
-         ul{
+
+        ul {
             flex-wrap: wrap;
-            margin: -15px; 
-            transition: all 0.8s;
-            
+            margin: -15px;
+
             li {
                 margin: auto 35px;
+
+                a {
+                    color: #E8EBEE;
+                    transition: 1s;
+                }
+
+                a:hover {
+                    font-size: 50px;
+                    color: aqua;
+                }
             }
         }
+
+
     }
-    
-    .iniciarRegister{
+
+    .iniciarRegister {
         font-size: 23px;
         margin-right: auto;
         margin-left: auto;
-        ul{
+
+        ul {
             display: flex;
             list-style-type: none;
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
+
             li {
                 display: flex;
-                margin: 15px;  
-                a{
+                margin: 15px;
+
+                a {
                     text-decoration: none;
                     color: #E8EBEE;
                 }
             }
-           
+
         }
-   }
-     
-   .materiasOpciones{
-     ul{
-        background-color: #0575E6; 
-        li{
-            font-size: 25px;
-            margin: 10px;
-            a{
-                text-decoration: none;   
-            }
-        } 
-      } 
-      
-    
     }
-    
- 
-} 
+
+    .materiasOpciones {
+        ul {
+            background-color: #0575E6;
+
+            li {
+                font-size: 25px;
+                margin: 10px;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+    }
+
+
+}

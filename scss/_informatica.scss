@@ -1,0 +1,72 @@
+.informatica{
+    color:#E8EBEE;
+    background-image:linear-gradient(to right, #A7BFE8,#6190E8);
+    .informaticaMaterias{
+        text-align: center;
+        h2{
+            font-size: 60px;
+            text-decoration: underline;
+        }
+        .primer{
+            p{
+                font-size: 30px;
+            }
+            ul{
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+        .segundo{
+            p{
+                font-size: 30px;
+            }
+            ul{
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+        .tercer{
+            p{
+                font-size: 30px;
+            }
+            ul{
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+    .contenidosInformatica{
+        text-align: center;
+        h2{
+            font-size: 60px;
+            text-decoration: underline;
+        }
+        .contenido{
+            ul{
+                margin: 0;
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:320px){
+    .informatica{
+        .informaticaMaterias{
+            h2{
+                font-size: 50px;
+            }
+        }
+        .contenidosInformatica{
+            h2{
+                font-size: 50px;
+            }
+    }
+    }
+    
+}

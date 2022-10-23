@@ -1,0 +1,57 @@
+.electronica{
+    color:#E8EBEE;
+    background-image:linear-gradient(to right, #A7BFE8,#6190E8);
+    .electronicaMaterias{
+        text-align: center;
+        h2{
+            font-size: 60px;
+            text-decoration: underline;
+        }
+        .p{
+            p{
+                font-size: 30px;
+            }
+            ul{
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+        .s{
+            p{
+                font-size: 30px;
+            }
+            ul{
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+        .t{
+            p{
+                font-size: 30px;
+            }
+            ul{
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+    .contenidosElectronica{
+        text-align: center;
+        h2{
+            font-size: 60px;
+            text-decoration: underline;
+        }
+        .contenidoE{
+            ul{
+                margin: 0;
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family= Mukta:wght@200 & family= Roboto:wght@300 & display=swap");
 * {
   padding: 0;
@@ -23,12 +24,19 @@ header {
     display: flex;
     font-size: 25px;
     justify-content: center; }
+    header .barraNavegacion nav div .navbar {
+      left: auto; }
     header .barraNavegacion ul {
       flex-wrap: wrap;
-      margin: -15px;
-      transition: all 0.8s; }
+      margin: -15px; }
       header .barraNavegacion ul li {
         margin: auto 35px; }
+        header .barraNavegacion ul li a {
+          color: #E8EBEE;
+          transition: 1s; }
+        header .barraNavegacion ul li a:hover {
+          font-size: 50px;
+          color: aqua; }
   header .iniciarRegister {
     font-size: 23px;
     margin-right: auto;
@@ -120,7 +128,6 @@ footer {
       grid-template-areas: "informacion" "creditos"; } }
 
 .mainMain {
-  display: block;
   color: #E8EBEE;
   background-image: linear-gradient(to right, #A7BFE8, #6190E8); }
   .mainMain .sobreNosotros {
@@ -150,6 +157,8 @@ footer {
   color: #E8EBEE;
   background-image: linear-gradient(to right, #A7BFE8, #6190E8); }
   .mainInscripcion .informacionInscripcion {
+    display: flex;
+    justify-content: center;
     display: grid;
     margin: auto 0;
     grid-template-areas: "subtitulo subtitulo subtitulo" "requisitos proceso fecha" "inscripcion inscripcion inscripcion"; }
@@ -160,43 +169,40 @@ footer {
       text-transform: uppercase;
       text-decoration: underline;
       margin: 0 auto 20px; }
-      .mainInscripcion .informacionInscripcion h2 .requisitosInscripcion {
-        max-width: 400px;
-        grid-area: requisitos;
+    .mainInscripcion .informacionInscripcion .requisitosInscripcion {
+      max-width: 400px;
+      grid-area: requisitos;
+      text-align: center; }
+      .mainInscripcion .informacionInscripcion .requisitosInscripcion h3 {
+        text-decoration: underline; }
+    .mainInscripcion .informacionInscripcion .procesoInscripcion {
+      text-align: center;
+      max-width: 400px;
+      grid-area: proceso; }
+      .mainInscripcion .informacionInscripcion .procesoInscripcion h3 {
+        text-decoration: underline; }
+    .mainInscripcion .informacionInscripcion .fechaInscripcion {
+      max-width: 400px;
+      grid-area: fecha;
+      text-align: center; }
+      .mainInscripcion .informacionInscripcion .fechaInscripcion h3 {
+        text-decoration: underline; }
+    .mainInscripcion .informacionInscripcion .inscripcion {
+      grid-area: inscripcion; }
+      .mainInscripcion .informacionInscripcion .inscripcion form legend {
         text-align: center; }
-        .mainInscripcion .informacionInscripcion h2 .requisitosInscripcion h3 {
-          text-decoration: underline;
-          text-transform: uppercase; }
-      .mainInscripcion .informacionInscripcion h2 .procesoInscripcion {
-        text-align: center;
-        max-width: 400px;
-        grid-area: proceso; }
-        .mainInscripcion .informacionInscripcion h2 .procesoInscripcion h3 {
-          text-decoration: underline;
-          text-transform: uppercase; }
-      .mainInscripcion .informacionInscripcion h2 .fechaInscripcion {
-        max-width: 400px;
-        grid-area: fecha;
-        text-align: center; }
-        .mainInscripcion .informacionInscripcion h2 .fechaInscripcion h3 {
-          text-decoration: underline;
-          text-transform: uppercase; }
-      .mainInscripcion .informacionInscripcion h2 .inscripcion {
-        grid-area: inscripcion; }
-        .mainInscripcion .informacionInscripcion h2 .inscripcion form legend {
-          text-align: center; }
-        .mainInscripcion .informacionInscripcion h2 .inscripcion form input {
-          display: flex;
-          margin: 10px;
-          margin-left: auto;
-          margin-right: auto;
-          padding: 10px; }
-        .mainInscripcion .informacionInscripcion h2 .inscripcion form label {
-          display: flex;
-          margin: 5px;
-          justify-content: center;
-          font-size: 20px;
-          padding: 5px; }
+      .mainInscripcion .informacionInscripcion .inscripcion form input {
+        display: flex;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px; }
+      .mainInscripcion .informacionInscripcion .inscripcion form label {
+        display: flex;
+        margin: 5px;
+        justify-content: center;
+        font-size: 20px;
+        padding: 5px; }
 
 @media (max-width: 576px) {
   .mainInscripcion .informacionInscripcion {
@@ -204,8 +210,19 @@ footer {
     .mainInscripcion .informacionInscripcion h2 {
       font-size: 40px; } }
 
+@media (max-width: 250px) {
+  .mainInscripcion .informacionInscripcion h2 {
+    font-size: 20px; }
+  .mainInscripcion .informacionInscripcion .requisitosInscripcion {
+    max-width: 150px; }
+  .mainInscripcion .informacionInscripcion .fechaInscripcion {
+    max-width: 150px; }
+  .mainInscripcion .informacionInscripcion .procesoInscripcion {
+    max-width: 150px; }
+  .mainInscripcion .informacionInscripcion .inscripcion {
+    max-width: 150px; } }
+
 .maininiciarSesion {
-  display: block;
   color: #E8EBEE;
   background-image: linear-gradient(to right, #A7BFE8, #6190E8); }
   .maininiciarSesion .iniciarSesion form legend {
@@ -244,3 +261,109 @@ footer {
 @media (max-width: 350px) {
   .mainContacto .informacionContacto h2 {
     font-size: 40px; } }
+
+.basico {
+  background-image: linear-gradient(to right, #A7BFE8, #6190E8);
+  color: #E8EBEE; }
+  .basico .cicloBasico {
+    text-align: center; }
+    .basico .cicloBasico h2 {
+      font-size: 60px;
+      text-decoration: underline; }
+    .basico .cicloBasico .primerAño {
+      margin: auto; }
+      .basico .cicloBasico .primerAño p {
+        font-size: 30px; }
+      .basico .cicloBasico .primerAño ul li {
+        list-style-type: none; }
+    .basico .cicloBasico .segundoAño {
+      margin: auto; }
+      .basico .cicloBasico .segundoAño p {
+        font-size: 30px; }
+      .basico .cicloBasico .segundoAño ul li {
+        list-style-type: none; }
+    .basico .cicloBasico .tercerAño {
+      margin: auto; }
+      .basico .cicloBasico .tercerAño p {
+        font-size: 30px; }
+      .basico .cicloBasico .tercerAño ul li {
+        list-style-type: none; }
+  .basico .contenidos {
+    text-align: center; }
+    .basico .contenidos h2 {
+      font-size: 60px;
+      text-decoration: underline; }
+    .basico .contenidos .puntosContenido ul {
+      margin: 0; }
+      .basico .contenidos .puntosContenido ul li {
+        list-style-type: none; }
+
+@media (max-width: 320px) {
+  .basico .contenidos h2 {
+    font-size: 50px; } }
+
+.informatica {
+  color: #E8EBEE;
+  background-image: linear-gradient(to right, #A7BFE8, #6190E8); }
+  .informatica .informaticaMaterias {
+    text-align: center; }
+    .informatica .informaticaMaterias h2 {
+      font-size: 60px;
+      text-decoration: underline; }
+    .informatica .informaticaMaterias .primer p {
+      font-size: 30px; }
+    .informatica .informaticaMaterias .primer ul li {
+      list-style-type: none; }
+    .informatica .informaticaMaterias .segundo p {
+      font-size: 30px; }
+    .informatica .informaticaMaterias .segundo ul li {
+      list-style-type: none; }
+    .informatica .informaticaMaterias .tercer p {
+      font-size: 30px; }
+    .informatica .informaticaMaterias .tercer ul li {
+      list-style-type: none; }
+  .informatica .contenidosInformatica {
+    text-align: center; }
+    .informatica .contenidosInformatica h2 {
+      font-size: 60px;
+      text-decoration: underline; }
+    .informatica .contenidosInformatica .contenido ul {
+      margin: 0; }
+      .informatica .contenidosInformatica .contenido ul li {
+        list-style-type: none; }
+
+@media (max-width: 320px) {
+  .informatica .informaticaMaterias h2 {
+    font-size: 50px; }
+  .informatica .contenidosInformatica h2 {
+    font-size: 50px; } }
+
+.electronica {
+  color: #E8EBEE;
+  background-image: linear-gradient(to right, #A7BFE8, #6190E8); }
+  .electronica .electronicaMaterias {
+    text-align: center; }
+    .electronica .electronicaMaterias h2 {
+      font-size: 60px;
+      text-decoration: underline; }
+    .electronica .electronicaMaterias .p p {
+      font-size: 30px; }
+    .electronica .electronicaMaterias .p ul li {
+      list-style-type: none; }
+    .electronica .electronicaMaterias .s p {
+      font-size: 30px; }
+    .electronica .electronicaMaterias .s ul li {
+      list-style-type: none; }
+    .electronica .electronicaMaterias .t p {
+      font-size: 30px; }
+    .electronica .electronicaMaterias .t ul li {
+      list-style-type: none; }
+  .electronica .contenidosElectronica {
+    text-align: center; }
+    .electronica .contenidosElectronica h2 {
+      font-size: 60px;
+      text-decoration: underline; }
+    .electronica .contenidosElectronica .contenidoE ul {
+      margin: 0; }
+      .electronica .contenidosElectronica .contenidoE ul li {
+        list-style-type: none; }
